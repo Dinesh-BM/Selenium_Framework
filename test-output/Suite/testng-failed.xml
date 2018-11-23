@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="fxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.scripts.homeuser">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="loginscript"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- com.scripts.homeuser -->
+      <class name="com.scripts.login01">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="loginscript"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- com.scripts.login01 -->
+    </classes>
+  </test> <!-- fxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
